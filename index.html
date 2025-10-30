@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI/ML Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --surface: #121826;
+        --text: #e6eaf2;
+        --muted: #9aa3b2;
+        --border: #1f2636;
+        --ring: #f59e0b;
+
+        --primary: #fb923c;            /* copper */
+        --primary-contrast: #0b0f14;
+        --accent: #22d3ee;             /* cyan pop */
+
+        /* Hero gradient stops */
+        --g1: #1a1035;                 /* plum */
+        --g2: #8a3b12;                 /* burnt orange */
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        overflow-x: hidden;
+      }
+      
+      @keyframes pulse-glow {
+        0%, 100% {
+          box-shadow: 0 0 15px 0px hsla(187, 85%, 53%, 0.4), 0 0 5px 0px hsla(28, 97%, 62%, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 25px 5px hsla(187, 85%, 53%, 0.6), 0 0 10px 2px hsla(28, 97%, 62%, 0.5);
+        }
+      }
+
+      .font-heading {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+      }
+      
+      .hero-text-shadow {
+        text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.7);
+      }
+      
+      .floating-text-shadow {
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+      }
+
+      /* Elegant Header Scroll Effect */
+      .header-scrolled {
+        background-color: hsla(217, 39%, 11%, 0.8) !important; /* var(--surface) with opacity */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+      }
+      
+      .content-card {
+        background-color: var(--surface);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--border);
+        transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .content-card:hover {
+        border-color: var(--primary);
+      }
+      
+      /* New Hover Effect: "Image Tint" */
+      .project-card .image-container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project-card .image-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--accent);
+        mix-blend-mode: hard-light;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+      
+      .project-card:hover .image-container::after {
+        opacity: 0.6;
+      }
+
+
+      .glowing-border {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .glowing-border::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(120deg, var(--accent), var(--primary));
+        -webkit-mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      
+      .group:hover .glowing-border::before, .glowing-border:hover::before {
+        opacity: 1;
+      }
+
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s cubic-bezier(0.2, 1, 0.8, 1), transform 0.8s cubic-bezier(0.2, 1, 0.8, 1);
+      }
+      .scroll-reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
