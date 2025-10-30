@@ -44,11 +44,11 @@ const PROJECTS = [
 const SKILLS_DATA = [
     {
         category: "Programming & Scripting",
-        skills: ["Python", "Java", "R", "C++", "JavaScript (ES6+)", "Bash"]
+        skills: ["Python", "Java", "R", "C++", "JavaScript", "Bash"]
     },
     {
         category: "AI/ML Frameworks",
-        skills: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "HuggingFace Transformers", "Pandas", "NumPy"]
+        skills: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "Transformers", "Pandas", "NumPy"]
     },
     {
         category: "Models & Architectures",
@@ -104,9 +104,9 @@ const EDUCATION = [
 
 const WORK_EXPERIENCE = [
     {
-        role: "Machine Learning Engineer Intern",
-        company: "Innovate AI Corp",
-        duration: "June 2023 - September 2023",
+        role: "ML/AI Engineer ",
+        company: "Plus 91 Technologies Pvt. Ltd.",
+        duration: "March 2025 - Present",
         details: [
             "Developed and fine-tuned a Transformer-based model for sentiment analysis, improving prediction accuracy by 18% on financial news data.",
             "Engineered a real-time data ingestion pipeline using Kafka and Python, processing over 10,000 tweets per minute for the stock prediction project.",
