@@ -4,9 +4,9 @@ This is a minimalist, captivating, and futuristic portfolio website for a Machin
 
 ## Deployment to GitHub Pages
 
-This project is configured to be deployed directly to GitHub Pages without any build step.
+This project is configured to be deployed directly to GitHub Pages without any build step. It's a static site using only HTML, CSS, and JavaScript.
 
-1.  **Push Code:** Make sure all the files (`index.html`, `index.tsx`, `App.tsx`, etc.) are in the `main` branch of your GitHub repository.
+1.  **Push Code:** Make sure all the files (`index.html`, `index.js`, `favicon.svg`) are in the `main` branch of your GitHub repository.
 2.  **Go to Settings:** In your repository on GitHub, go to `Settings` > `Pages`.
 3.  **Configure Source:**
     *   Under "Build and deployment", for the "Source", select **Deploy from a branch**.
