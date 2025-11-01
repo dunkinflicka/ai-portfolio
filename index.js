@@ -84,7 +84,7 @@ const SKILLS_DATA = [
 const PERSONAL_INFO = {
   name: "Anvit More",
   title: "ML & AI Engineer",
-  email: "mailto:anviit22@gmail.com",
+  email: "anviit22@gmail.com",
   linkedin: "https://linkedin.com/in/anvit22",
   github: "https://github.com/dunkinflicka",
 };
