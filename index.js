@@ -210,7 +210,7 @@ const Hero = () => `
             ${AnimatedDiv('flex justify-center md:justify-start items-center gap-6', 700, `
                 <a href="${PERSONAL_INFO.github}" target="_blank" rel="noopener noreferrer" class="text-[var(--muted)] hover:text-[var(--accent)] transition-transform duration-300 hover:scale-110 p-2">${GithubIcon()}</a>
                 <a href="${PERSONAL_INFO.linkedin}" target="_blank" rel="noopener noreferrer" class="text-[var(--muted)] hover:text-[var(--accent)] transition-transform duration-300 hover:scale-110 p-2">${LinkedinIcon()}</a>
-                <a href="mailto:${PERSONAL_INFO.email}" class="text-[var(--muted)] hover:text-[var(--accent)] transition-transform duration-300 hover:scale-110 p-2">${MailIcon()}</a>
+                <a href="https://mail.google.com/mail/?view=cm&to=${PERSONAL_INFO.email}" class="text-[var(--muted)] hover:text-[var(--accent)] transition-transform duration-300 hover:scale-110 p-2">${MailIcon()}</a>
             `)}
         </div>
     </section>
